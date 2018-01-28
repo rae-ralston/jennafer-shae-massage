@@ -9,7 +9,7 @@
     transition: all .2s ease;
     position: relative;
     letter-spacing: .2rem;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
   }
 
   &--white {
@@ -54,5 +54,30 @@
     z-index: -1;
     transition: all .3s ease-out;
     opacity: .3;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: $color-deep-sky;
+    display: inline-block;
+    text-decoration: none;
+    font-size: $default-font-size;
+    border-bottom: 3px solid $color-deep-sky;
+    padding: 3px;
+    transition: all .2s ease-in;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-deep-sky;
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1.5rem rgba($color-black, .15);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 .3rem 1rem rgba($color-black, .15);
   }
 }
