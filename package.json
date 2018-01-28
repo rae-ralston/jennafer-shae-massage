@@ -1,5 +1,9 @@
 {
   "name": "jennafer-shae",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "node-sass": "^4.7.2",
+    "sass": "^1.0.0-beta.4"
+  }
 }
