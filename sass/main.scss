@@ -1,61 +1,85 @@
+$color-grey-dark: #777;
+$color-white: #fff;
+
+$color-magenta: #ff00ff;
+$color-deep-sky: #00c8ff;
+$color-bright-grass: #02ff74;
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 /* equates to 10px from browser default of 16px */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 0, 255, 0.3), rgba(0, 200, 255, 0.3), rgba(2, 255, 116, 0.3)), url(../img/clouds.jpg);
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba($color-magenta, .3),
+      rgba($color-deep-sky, .3),
+      rgba($color-bright-grass, .3)
+    ),
+    url(../img/clouds.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  position: relative; }
+  position: relative;
+}
 
 .header__logo-box {
   position: absolute;
   top: 3rem;
   left: 3rem;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+}
 
 .header__logo-box:hover {
-  transform: rotate(180deg) scale(1.2); }
+  transform: rotate(180deg) scale(1.2);
+}
 
 .header__logo {
-  height: 4.5rem; }
+  height: 4.5rem;
+}
 
 .header__text-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -70%);
-  text-align: center; }
+  text-align: center;
+}
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+}
 
 .heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3rem;
-  animation: moveInLeft .5s ease-in; }
+  animation: moveInLeft .5s ease-in;
+}
 
 .heading-primary--sub {
   display: block;
@@ -63,35 +87,52 @@ body {
   font-weight: 400;
   letter-spacing: 2rem;
   margin-top: 1rem;
-  animation: moveInRight .5s ease-in; }
+  animation: moveInRight .5s ease-in;
+}
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-10rem);
+  }
+
   80% {
-    transform: translateX(1rem); }
+    transform: translateX(1rem);
+  }
+
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(10rem);
+  }
+
   80% {
-    transform: translateX(-1rem); }
+    transform: translateX(-1rem);
+  }
+
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem); }
+    transform: translateY(3rem);
+  }
+
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 .btn:link,
 .btn:visited {
@@ -103,23 +144,28 @@ body {
   transition: all .2s ease;
   position: relative;
   letter-spacing: .2rem;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 .btn--white {
-  background-color: #fff;
-  color: #777; }
+  background-color: $color-white;
+  color: $color-grey-dark;
+}
 
 .btn--animated {
   animation: moveInBottom .2s ease-out .75s;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+}
 
 .btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  transform: translateY(-.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2)
+}
 
 /* psuedo element for button effect */
 .btn::after {
@@ -133,11 +179,14 @@ body {
   left: 0;
   z-index: -1;
   transition: all .3s ease-out;
-  opacity: .3; }
+  opacity: .3;
+}
 
 .btn--white::after {
-  background-color: #fff; }
+  background-color: $color-white;
+}
 
 .btn:hover::after {
   transform: scaleX(1.2) scaleY(1.4);
-  opacity: 0; }
+  opacity: 0;
+}

@@ -2,8 +2,11 @@
   "name": "jennafer-shae",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "sass:watch": "node-sass sass/main.scss css/style.css -w"
+  },
   "dependencies": {
-    "node-sass": "^4.7.2",
-    "sass": "^1.0.0-beta.4"
+    "live-server": "^1.2.0",
+    "node-sass": "^4.7.2"
   }
 }
