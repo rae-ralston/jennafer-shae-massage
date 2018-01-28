@@ -27,7 +27,7 @@
 
     &:hover {
       outline: .2rem solid $color-deep-sky;
-      transform: scale( 1.05 );
+      transform: scale( 1.05 ) translateY(-.8rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
       z-index: 20;
     }
@@ -35,7 +35,7 @@
   // .composition:hover composition__photo:not(:hover)
   // when hovering on .composition, select composition__photo's that I'm not hovering on.
   &:hover &__photo:not(:hover){
-    transform: scale( .9 );
+    transform: scale( .95 );
 
   }
 }
