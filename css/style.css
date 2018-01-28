@@ -95,10 +95,10 @@ body {
   text-align: center; }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 10rem; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 5rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
@@ -151,7 +151,7 @@ body {
   text-decoration: none;
   font-size: 1.6rem;
   border-bottom: 3px solid #00c8ff;
-  padding: 3px;
+  padding: 3px 5px;
   transition: all .2s ease-in; }
 
 .btn-text:hover {
@@ -163,6 +163,33 @@ body {
 .btn-text:active {
   transform: translateY(0);
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 1em; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -4rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 8rem; }
+    .composition__photo--p3 {
+      left: 25%;
+      top: 22rem; }
+    .composition__photo:hover {
+      outline: 0.2rem solid #00c8ff;
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9); }
 
 .row {
   max-width: 114rem;
