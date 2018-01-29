@@ -36,6 +36,5 @@
   // when hovering on .composition, select composition__photo's that I'm not hovering on.
   &:hover &__photo:not(:hover){
     transform: scale( .95 );
-
   }
 }
