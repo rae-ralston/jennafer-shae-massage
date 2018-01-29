@@ -1,0 +1,99 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 21/12/2017 15:52
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-001-cream-2:before { content: "\f100"; }
+.flaticon-002-hot-stones:before { content: "\f101"; }
+.flaticon-003-candles:before { content: "\f102"; }
+.flaticon-004-hot-stone:before { content: "\f103"; }
+.flaticon-005-face-mask-1:before { content: "\f104"; }
+.flaticon-006-woman:before { content: "\f105"; }
+.flaticon-007-teapot:before { content: "\f106"; }
+.flaticon-008-candle:before { content: "\f107"; }
+.flaticon-009-honey:before { content: "\f108"; }
+.flaticon-010-shower:before { content: "\f109"; }
+.flaticon-011-cream-1:before { content: "\f10a"; }
+.flaticon-012-aloe-vera:before { content: "\f10b"; }
+.flaticon-013-bathroom:before { content: "\f10c"; }
+.flaticon-014-cream:before { content: "\f10d"; }
+.flaticon-015-citrus:before { content: "\f10e"; }
+.flaticon-016-bathrope:before { content: "\f10f"; }
+.flaticon-017-masseuse:before { content: "\f110"; }
+.flaticon-018-slippers:before { content: "\f111"; }
+.flaticon-019-drop:before { content: "\f112"; }
+.flaticon-020-comb:before { content: "\f113"; }
+.flaticon-021-scent:before { content: "\f114"; }
+.flaticon-022-bamboo:before { content: "\f115"; }
+.flaticon-023-lotus:before { content: "\f116"; }
+.flaticon-024-oil-1:before { content: "\f117"; }
+.flaticon-025-oil:before { content: "\f118"; }
+.flaticon-026-face-mask:before { content: "\f119"; }
+.flaticon-027-towels:before { content: "\f11a"; }
+.flaticon-028-lotion:before { content: "\f11b"; }
+.flaticon-029-mortar:before { content: "\f11c"; }
+.flaticon-030-massage:before { content: "\f11d"; }
+    
+    $font-Flaticon-001-cream-2: "\f100";
+    $font-Flaticon-002-hot-stones: "\f101";
+    $font-Flaticon-003-candles: "\f102";
+    $font-Flaticon-004-hot-stone: "\f103";
+    $font-Flaticon-005-face-mask-1: "\f104";
+    $font-Flaticon-006-woman: "\f105";
+    $font-Flaticon-007-teapot: "\f106";
+    $font-Flaticon-008-candle: "\f107";
+    $font-Flaticon-009-honey: "\f108";
+    $font-Flaticon-010-shower: "\f109";
+    $font-Flaticon-011-cream-1: "\f10a";
+    $font-Flaticon-012-aloe-vera: "\f10b";
+    $font-Flaticon-013-bathroom: "\f10c";
+    $font-Flaticon-014-cream: "\f10d";
+    $font-Flaticon-015-citrus: "\f10e";
+    $font-Flaticon-016-bathrope: "\f10f";
+    $font-Flaticon-017-masseuse: "\f110";
+    $font-Flaticon-018-slippers: "\f111";
+    $font-Flaticon-019-drop: "\f112";
+    $font-Flaticon-020-comb: "\f113";
+    $font-Flaticon-021-scent: "\f114";
+    $font-Flaticon-022-bamboo: "\f115";
+    $font-Flaticon-023-lotus: "\f116";
+    $font-Flaticon-024-oil-1: "\f117";
+    $font-Flaticon-025-oil: "\f118";
+    $font-Flaticon-026-face-mask: "\f119";
+    $font-Flaticon-027-towels: "\f11a";
+    $font-Flaticon-028-lotion: "\f11b";
+    $font-Flaticon-029-mortar: "\f11c";
+    $font-Flaticon-030-massage: "\f11d";
