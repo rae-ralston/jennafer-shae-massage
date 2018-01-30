@@ -2,13 +2,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
-    // background-color: red;
-    column-rule: #fff;
-
-    height: 50rem;
+    height: 52rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -39,5 +36,89 @@
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image:
+        linear-gradient(
+          to right bottom,
+          $color-purple,
+          $color-purple-dark
+        ),
+        url(../img/woman-1.jpg);
+    }
+
+    &--2 {
+      background-image:
+        linear-gradient(
+          to right bottom,
+          $color-green-lgt,
+          $color-green
+        ),
+        url(../img/woman-2.jpg);
+    }
+
+    &--3 {
+      background-image:
+        linear-gradient(
+          to right bottom,
+          $color-blue,
+          $color-blue-dark
+        ),
+        url(../img/woman-3.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    text-align: right;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-purple, .8),
+        rgba($color-purple-dark, .8)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px $color-grey-light-2 solid;
+        }
+      }
+    }
   }
 }
