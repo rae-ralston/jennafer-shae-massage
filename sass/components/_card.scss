@@ -1,3 +1,4 @@
+// GENERAL SET UP
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -24,7 +25,27 @@
       transform: rotateY(180deg);
 
       &--1 {
-        background-image: linear-gradient(to right bottom, $color-purple, $color-purple-dark);
+        background-image: linear-gradient(
+          to right bottom,
+          $color-purple,
+          $color-purple-dark
+        );
+      }
+
+      &--2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-green,
+          $color-green-dark
+        );
+      }
+
+      &--3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-blue,
+          $color-blue-dark
+        );
       }
     }
   }
@@ -37,6 +58,8 @@
   &:hover &__side--back {
     transform: rotateY(0);
   }
+
+  // FRONT SIDE STYLING
 
   &__picture {
     background-size: cover;
@@ -59,8 +82,8 @@
       background-image:
         linear-gradient(
           to right bottom,
-          $color-green-lgt,
-          $color-green
+          $color-green,
+          $color-green-dark
         ),
         url(../img/woman-2.jpg);
     }
@@ -100,6 +123,20 @@
         rgba($color-purple-dark, .8)
       );
     }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-green, .8),
+        rgba($color-green-dark, .8)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-blue, .8),
+        rgba($color-blue-dark, .8)
+      );
+    }
   }
 
   &__details {
@@ -120,5 +157,31 @@
         }
       }
     }
+  }
+
+  // BACK SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 90%;
+  }
+
+  &__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: $color-white;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 30%;
   }
 }
