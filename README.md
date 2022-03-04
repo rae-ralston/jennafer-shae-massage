@@ -1,6 +1,6 @@
 # Jennafer Shae Massage
 
-<img src={./example.png} alt="jennafer shae massage" />
+<img src="https://github.com/rachel-ftw/jennafer-shae-massage/blob/master/example.png" alt="jennafer shae massage" />
 
 ## Credits
 
